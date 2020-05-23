@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+message = 'Some Welcome Message'
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.message)
   }
 
 }
