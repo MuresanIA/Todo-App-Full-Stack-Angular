@@ -8,13 +8,13 @@
         </tr>
     </thead>
     <tbody>
-        <!-- for (Todo todo : todos){} -->
+      
         <tr *ngFor="let todo of todos">
             <td>{{todo.description}}</td>
             <td>{{todo.targetDate | date | uppercase}}</td>
             <td>{{todo.done}}</td>
         </tr>
-    <!-- } -->
+  
     </tbody>
 
 
