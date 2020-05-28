@@ -11,6 +11,7 @@ import { WelcomeDataService } from '../service/data/welcome-data.service';
 export class WelcomeComponent implements OnInit {
 
 message = 'Some Welcome Message'
+welcomeMessageFromService:string
 name=''
 
 
@@ -29,7 +30,18 @@ name=''
 
 getWelcomeMessage(){
   console.log(this.service.executeHelloWorldBeanService());
-  this.service.executeHelloWorldBeanService().subscribe();
+  this.service.executeHelloWorldBeanService().subscribe(
+    response => this.handleSuccessfulResponse(response)
+  );
+
+    console.log('last line of getWelcomeMessage')
+
+}
+handleSuccessfulResponse(response){
+this.welcomeMessageFromService=response.message
+
+  // console.log(response);
+  // console.log(response.message);
 }
 
 }
