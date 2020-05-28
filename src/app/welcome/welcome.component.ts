@@ -28,7 +28,7 @@ name=''
   }
 
 getWelcomeMessage(){
-  this.service.executeHelloWorldBeanService();
+  console.log(this.service.executeHelloWorldBeanService());
 }
 
 }
