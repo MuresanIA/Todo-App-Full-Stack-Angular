@@ -28,7 +28,7 @@ export class ListTodosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.refreshTodos
+    this.refreshTodos();
   }
 
   refreshTodos(){
@@ -45,8 +45,8 @@ export class ListTodosComponent implements OnInit {
     this.todoService.deleteTodo(`alex`, id).subscribe(
       response => {
         console.log(response);
-          this.message=`Delete of Todo ${id} Successful!`
-          this.refreshTodos
+          this.message=`Delete of Todo ${id} Successful!`;
+          this.refreshTodos();
       }
     )
   }
