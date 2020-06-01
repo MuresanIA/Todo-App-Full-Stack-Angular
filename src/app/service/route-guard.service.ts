@@ -9,7 +9,8 @@ export class RouteGuardService implements CanActivate {
 
   constructor(
     public hardcodedAuthenticationService: HardcodedAuthenticationService,
-    public router: Router) { 
+    public router: Router
+    ) { 
 
   }
 
