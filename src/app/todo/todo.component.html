@@ -1,7 +1,7 @@
 <H1>Todo</H1>
 
 <div class="container">
-
+    <form (ngSubmit)="!todoForm.invalid && saveTodo()" #todoForm="ngForm">
     <fieldset class="form-group">
         <label>Description</label>
         <input type="text" [(ngModel)]="todo.description" class="form-control" name="description" required="required">
@@ -18,6 +18,6 @@
             name="targetDate" required="required">
     </fieldset>
 
-    <button class="btn btn-success" (click)="saveTodo()">Save</button>
-
+    <button type="submit" class="btn btn-success">Save</button>
+    </form>
 </div>
