@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 
 export class HelloWorldBean {
   constructor(public message: string) { }
@@ -19,7 +19,25 @@ export class WelcomeDataService {
   }
 
   executeHelloWorldServiceWithPathVariable(name) {
-    return this.http.get<HelloWorldBean>(`http://localhost:8080/hello-world/path-variable/${name}`);
+    let basicAuthHeaderString = this.createBasicAuthenticationHttpHeader();
+
+    let headers = new HttpHeaders(
+      {
+        Authorization: basicAuthHeaderString
+      }
+    )
+
+    return this.http.get<HelloWorldBean>(`http://localhost:8080/hello-world/path-variable/${name}`,
+      { headers });
 
   }
+  createBasicAuthenticationHttpHeader() {
+    let username = 'alex'
+    let password = 'alex1'
+    let basicAuthHeaderString = 'Basic ' + window.btoa(username + ':' + password);
+    return basicAuthHeaderString;
+  }
+  //Access to XMLHttpRequest at 'http://localhost:8080/hello-world/path-variable/alex'
+  //  from origin 'http://localhost:4200' has been blocked by CORS policy:
+  //   No 'Access-Control-Allow-Origin' header is present on the requested resource.
 }
