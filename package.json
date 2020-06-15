@@ -19,7 +19,9 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
+    "connect": "^3.7.0",
     "rxjs": "~6.5.4",
+    "serve-static": "^1.14.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
