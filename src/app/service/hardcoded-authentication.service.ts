@@ -7,18 +7,18 @@ export class HardcodedAuthenticationService {
 
   constructor() { }
 
-  authenticate(username, password){
-
-    if(username === 'alex' && password === 'alex1'){
+  authenticate(username, password) {
+    
+    if(username==="alex" && password === 'alex1') {
       sessionStorage.setItem('authenticaterUser', username);
-
       return true;
     }
     return false;
   }
-  isUserLoggedIn(){
-   let user = sessionStorage.getItem('authenticaterUser')
-   return !(user === null)
+
+  isUserLoggedIn() {
+    let user = sessionStorage.getItem('authenticaterUser')
+    return !(user === null)
   }
 
   logout(){

@@ -1,17 +1,16 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-<div><a href="https://www.SmartTodoApp.com" class="navbar-brand">SmartTodoApp</a></div>
+        <div><a href="https://www.linkedin.com/in/ionut-alexandru-muresan-176628193/" class="navbar-brand">
+            Smart Todo App</a></div>
 
-<ul class="navbar-nav">
-    <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/welcome/SmartTodoApp" class="nav-link">Home</a></li>
-    <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/Todos" class="nav-link">Todos</a></li>
-</ul>
+        <ul class="navbar-nav">
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/welcome/alex" class="nav-link">Home</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/todos" class="nav-link">Todos</a></li>
+        </ul>
 
-<ul class="navbar-nav navbar-collapse justify-content-end">
-    <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
-    <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
-</ul>
-
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+                <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+        </ul>
     </nav>
-
 </header>

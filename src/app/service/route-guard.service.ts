@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { CanActivate, RouterStateSnapshot, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { HardcodedAuthenticationService } from './hardcoded-authentication.service';
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +8,8 @@ import { HardcodedAuthenticationService } from './hardcoded-authentication.servi
 export class RouteGuardService implements CanActivate {
 
   constructor(
-    public hardcodedAuthenticationService: HardcodedAuthenticationService,
-    public router: Router
-    ) { 
+    private hardcodedAuthenticationService: HardcodedAuthenticationService,
+    private router: Router) {
 
   }
 
@@ -18,9 +17,9 @@ export class RouteGuardService implements CanActivate {
 
     if (this.hardcodedAuthenticationService.isUserLoggedIn())
       return true;
-      this.router.navigate(['login']);
+
+    this.router.navigate(['login']);
 
     return false;
   }
-
 }
