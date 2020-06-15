@@ -18,7 +18,7 @@ export class WelcomeComponent implements OnInit {
     private service: WelcomeDataService) {
   }
 
-  ngOnInit(){
+  ngOnInit() : void{
     this.name = this.route.snapshot.params['name'];
   }
 

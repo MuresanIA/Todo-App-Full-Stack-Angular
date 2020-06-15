@@ -29,26 +29,26 @@ export class ListTodosComponent implements OnInit {
     private router : Router
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.refreshTodos();
   }
 
   refreshTodos(){
-    this.todoService.retrieveAllTodos('alex').subscribe(
+    this.todoService.retrieveAllTodos('in28minutes').subscribe(
       response => {
         console.log(response);
         this.todos = response;
-      }
+       }
     )
   }
 
   deleteTodo(id){
-    console.log(`delete todo ${id}`)
-    this.todoService.deleteTodo(`alex`, id).subscribe(
+    console.log(`delete todo ${id}` )
+    this.todoService.deleteTodo('in28minutes', id).subscribe (
       response => {
         console.log(response);
-          this.message=`Delete of Todo ${id} Successful!`;
-          this.refreshTodos();
+        this.message = `Delete of Todo ${id} Successful!`;
+        this.refreshTodos();
       }
     )
   }
@@ -59,5 +59,6 @@ export class ListTodosComponent implements OnInit {
   addTodo(id){
     
     this.router.navigate(['todos',-1])
+
   }
 }
