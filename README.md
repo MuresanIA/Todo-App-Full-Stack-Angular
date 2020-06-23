@@ -2,7 +2,7 @@ Hello,
 
 Thank you for your interest in my Todo - Application.
 
-This is repository contains the source code for the Front - End of the application.
+This repository contains the source code for the Front - End of the application.
 
 Here you can find the source code for the Back - End of the application: 
 
