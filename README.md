@@ -1,3 +1,7 @@
+Hello,
+
+This is the source code for the Front - End of the application.
+
 Here you can find the source code for the back - end of the application: 
 
 https://github.com/MuresanIA/Todo-App-Full-Stack-Restful-Web-Services
