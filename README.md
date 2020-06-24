@@ -16,7 +16,7 @@ The steps in creating the application:
 
 3. I have connected Spring - Security and Spring - Boot with JWT - Framework.
 
-(Currently working on connecting Spring - Boot restful API with JPA and Hibernate.)
+4. I have connected Spring - Boot restful API with JPA and Hibernate.
 
 
 Each of these steps is visible through my pushes to  main  branch .
