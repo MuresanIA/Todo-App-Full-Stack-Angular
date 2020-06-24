@@ -20,3 +20,9 @@ The steps in creating the application:
 
 
 Each of these steps is visible through my pushes to  main  branch .
+
+To access the application use the following:
+
+username: alex
+password: alex1
+
