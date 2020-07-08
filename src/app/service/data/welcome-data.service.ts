@@ -15,13 +15,13 @@ export class WelcomeDataService {
   ) { }
 
   executeHelloWorldBeanService() {
-    return this.http.get<HelloWorldBean>('http://localhost:8080/hello-world-bean');
+    return this.http.get<HelloWorldBean>('https://todo-app7-backend.herokuapp.com/hello-world-bean');
     
   }
 
   executeHelloWorldServiceWithPathVariable(name) {
     return this.http.get<HelloWorldBean>(
-      `http://localhost:8080/hello-world/path-variable/${name}`,
+      `https://todo-app7-backend.herokuapp.com/hello-world/path-variable/${name}`,
       
       );
    
