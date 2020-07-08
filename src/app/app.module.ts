@@ -1,4 +1,4 @@
-import { HttpIntercepterBasicAuthService } from './service/http/http-intercepter-basic-auth.service';
+import { HttpIntercepterBasicAuthService } from './service/Http/http-intercepter-basic-auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
