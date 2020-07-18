@@ -19,7 +19,11 @@ The steps in creating the application:
 4. I have connected Spring - Boot restful API with JPA and Hibernate.
 
 
-Each of these steps is visible through my pushes to  main  branch .
+Each of these steps is visible through my pushes to  main  branch.
+
+To access the application click on the following link:
+
+https://todo-app7.herokuapp.com/
 
 To login to the application use the following username and password:
 
