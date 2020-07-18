@@ -10,13 +10,13 @@ https://github.com/MuresanIA/Todo-App-Full-Stack-Restful-Web-Services
 
 The steps in creating the application:
 
-1. I have connected Angular Front - End to Spring - Boot restful services.
+1. Connecting Angular Front - End to Spring - Boot restful services.
 
-2. I have implemented basic authentication with Spring - Boot and Spring - Security.
+2. Implementing basic authentication with Spring - Boot and Spring - Security.
 
-3. I have connected Spring - Security and Spring - Boot with JWT - Framework.
+3. Connecting Spring - Security and Spring - Boot with JWT - Framework.
 
-4. I have connected Spring - Boot restful API with JPA and Hibernate.
+4. Connecting Spring - Boot restful API with JPA and Hibernate.
 
 
 Each of these steps is visible through my pushes to  main  branch.
