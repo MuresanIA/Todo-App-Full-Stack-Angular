@@ -1,27 +1,25 @@
-Hello,
+# Client - Side Todo - App
 
-Thank you for your interest in my Todo - Application.
+## Technology used:
 
-This repository contains the source code for the Front - End of the application.
+- Angular.js
 
 Here you can find the source code for the Back - End of the application: 
 
 https://github.com/MuresanIA/Todo-App-Full-Stack-Restful-Web-Services
 
-The steps in creating the application:
+### Application was created in 4 steps:
 
-1. Connecting Angular Front - End to Spring - Boot restful services.
+- Connecting Angular Front - End to Spring - Boot restful services.
 
-2. Implementing basic authentication with Spring - Boot and Spring - Security.
+- Implementing basic authentication with Spring - Boot and Spring - Security.
 
-3. Connecting Spring - Security and Spring - Boot with JWT - Framework.
+- Connecting Spring - Security and Spring - Boot with JWT - Framework.
 
-4. Connecting Spring - Boot restful API with JPA and Hibernate.
+- Connecting Spring - Boot restful API with JPA and Hibernate.
 
 
-Each of these steps is visible through my pushes to  main  branch.
-
-To access the application click on the following link:
+To test the application click on the following link:
 
 https://todo-app7.herokuapp.com/
 
