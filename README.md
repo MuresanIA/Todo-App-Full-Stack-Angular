@@ -19,11 +19,10 @@ https://github.com/MuresanIA/Todo-App-Full-Stack-Restful-Web-Services
 - Connecting Spring - Boot restful API with JPA and Hibernate.
 
 
-To test the application click on the following link:
-
+### Todo - App is deployed on Heroku: 
 https://todo-app7.herokuapp.com/
 
-To login to the application use the following username and password:
+To login use the following credentials:
 
 username: alex
 password: alex1
